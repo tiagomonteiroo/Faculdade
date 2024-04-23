@@ -51,6 +51,15 @@ class Vendas(Utilizadores,Produtos):
     pass
     data = models.DateField
 
+class Bilhete (Produtos):
+    pass
+    data = models.DateField
+    lugar = models.IntergerField
+    N_Emissao = models.IntergerField
+
+class Merchadising (Produtos):
+    pass
+    tipo = models.CharField(max_length=100)
 
 
 
