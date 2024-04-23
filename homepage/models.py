@@ -41,6 +41,12 @@ class Admin(Conta):
     funcao = models.CharField(max_length=100)
     ano_entrada = models.DateField
 
+class Socio (Utilizadores)
+    pass
+    N_Socio = models.IntegerField
+    is_socio = models.BooleanField
+
+
 class Produtos (models.Model):
     nome = models.CharField(max_length=100)
     preco = models.CharField(max_length=5)
