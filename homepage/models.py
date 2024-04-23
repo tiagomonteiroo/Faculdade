@@ -41,14 +41,18 @@ class Admin(Conta):
     funcao = models.CharField(max_length=100)
     ano_entrada = models.DateField
 
-class Vendas(Utilizadores,Produtos):
-    pass
-    data = models.DateField
-
 class Produtos (models.Model):
     nome = models.CharField(max_length=100)
     preco = models.CharField(max_length=5)
     ID_prod = models.IntergerField
+
+
+class Vendas(Utilizadores,Produtos):
+    pass
+    data = models.DateField
+
+
+
 
 
 
