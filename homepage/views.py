@@ -6,5 +6,5 @@ from django.template import loader
 def index(request):
     return render(request, "HomePage/index.html")
 
-def index4(request):
+def index5(request):
     return render(request, "HomePage/index.html")
