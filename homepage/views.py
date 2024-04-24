@@ -6,6 +6,5 @@ from django.template import loader
 def index(request):
     return render(request, "HomePage/index.html")
 
-def stupid(a)
-    verystupid = "tiago"
-    return verystupid
+def index2(request):
+    return render(request, "HomePage/index.html")
